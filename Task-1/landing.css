@@ -1,0 +1,115 @@
+
+  
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+
+body {
+  margin:0px;
+  padding:0px;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+}
+.column {
+  height: 343px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#Img-India {
+  background-image: url("https://images.unsplash.com/photo-1591420699297-88e82958f324?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTN8fGluZGlhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-shadow: 0px 0px 3px black;
+  color: #fff;
+}
+
+#col-places {
+  justify-content: space-around;
+  height: 480px;
+  background: #f1faee;
+  text-align: center;
+}
+#col-places div div p {
+  text-align: left;
+}
+.col-text {
+  padding: 0px 5px;
+}
+#col-places img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+#col-images {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+#col-images div div {
+  height: 180px;
+}
+
+#col-images > * {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+}
+img {
+  width: 100px;
+}
+#col-card-info {
+  width: 400px;
+  height: auto;
+  padding: 20px 20px;
+  flex-flow: row;
+  margin: 40px auto;
+  border-radius: 12px;
+  background: #ffb133;
+  border-bottom: 5px solid #411509;
+  color: #411509;
+}
+#col-card-info .card-info {
+  text-align: left;
+}
+#profle-img {
+  width: 500px;
+  height: 200px;
+  margin-right: 20px;
+}
+#profle-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+#col-card-info p {
+  font-style: italic;
+}
+@media screen and (max-width: 600px){
+
+  #col-places{
+    padding-top: 30px;
+    height:auto;
+  }
+
+  #col-images{
+    flex-direction: column;
+    gap:30px;
+  }
+  .col-text{
+    padding:0px 20px;
+  }
+  #profle-img {
+   width: 250px;
+   height: 150px;
+   margin-right: 20px;
+  }
+
+  #col-card-info{
+    width:auto;
+    margin:30px 10px 70px;
+  }
+}
